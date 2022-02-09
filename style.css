@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 20px Helvetica, sans-serif;
+}
+
+p {
+  font-family: monospace;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E0E0E0), to(#CCCCCC));
+  background-image: linear-gradient(180deg, #E0E0E0, #CCCCCC);
+}
+
+#title {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3A606E), to(#467586));
+  background-image: linear-gradient(180deg, #3A606E, #467586);
+  padding: 10px;
+  color: #E0E0E0;
+}
+
+#description {
+  text-align: center;
+  margin: 1rem;
+}
+
+#generalInfo {
+  text-align: center;
+  padding-top: 20px;
+  border-top: dotted;
+  border-color: #3A606E;
+}
+
+#name {
+  width: 300px;
+  max-width: 90%;
+  margin-bottom: 7px;
+}
+
+#name-label {
+  color: #3A606E;
+}
+
+#email {
+  width: 300px;
+  max-width: 90%;
+  margin-bottom: 7px;
+}
+
+#email-label {
+  color: #3A606E;
+}
+
+#number {
+  margin-bottom: 7px;
+}
+
+#number-label {
+  color: #3A606E;
+}
+
+#radio {
+  text-align: center;
+  color: #3A606E;
+  padding: 5px 0px 10px 0px;
+}
+
+#favoriteService {
+  text-align: center;
+  color: #3A606E;
+  font-size: 20px;
+  font-family: monospace;
+  border-top: dotted;
+  border-bottom: dotted;
+  padding: 1rem 0rem;
+  border-color: #828E82;
+}
+
+#favoriteService:hover {
+  background-color: #d7dbd7;
+}
+
+#preferences-title {
+  text-align: center;
+  color: #3A606E;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#preferences {
+  padding-bottom: 14px;
+  color: #3A606E;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+#textarea-title {
+  text-align: center;
+  color: #2C4954;
+  font-size: 14px;
+  border-top: dotted;
+  border-color: #828E82;
+  padding-top: 14px;
+}
+
+#textarea {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  padding-top: 4px;
+  padding-bottom: 7px;
+}
+
+#submit {
+  background-color: #607B7D;
+  color: #E0E0E0;
+  padding: 7px;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#submit:hover {
+  background-color: #3A606E;
+}
+/*# sourceMappingURL=style.css.map */

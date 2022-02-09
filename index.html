@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Streaming Services Survey</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Streaming Services Survey</h1>
+        <p id="description">Please take the time to answer the following survey.</p>
+        <form id="survey-form">
+            <div id="generalInfo">
+                <label for="name" id="name-label"><b>Name:</b></label>
+                    <input type="text" id="name"  placeholder="Enter name here" required><br>
+                <label for="email" id="email-label"><b>Email:</b></label>
+                    <input type="email" id="email"  placeholder="Enter email here" required><br>
+                <label for="age" id="number-label"><b>Age:</b></label>
+                    <input type="number" id="number"  min="13" max="115" placeholder="##"><br>
+            </div>
+            <div id="radio">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"><b>Male</b></label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female"><b>Female</b></label><br><br>
+            </div>
+            <div id="favoriteService" required>
+                <label><em><b>Favorite Streaming Service</b></em></label><br>
+                    <select id="dropdown">
+                        <option selected disabled>Please select one</option>
+                        <option value="Amazon">Amazon Prime Video</option>
+                        <option value="AppleTV+">Apple TV+</option>
+                        <option value="AT&T">AT&T TV NOW</option>
+                        <option value="CBS">CBS All Access</option>
+                        <option value="Crackle">Crackle</option>
+                        <option value="Crunchyroll">Crunchyroll</option>
+                        <option value="Disney+">Disney+</option>
+                        <option value="ESPN+">ESPN+</option>
+                        <option value="fuboTV">fuboTV</option>
+                        <option value="Funimation">Funimation</option>
+                        <option value="HBOMax">HBO Max</option>
+                        <option value="Hulu">Hulu</option>
+                        <option value="Netflix">Netflix</optio>
+                        <option value="PBSKids">PBS Kids</option>
+                        <option value="Peacock">Peacock</option>
+                        <option value="PlutoTV">Pluto TV</option>
+                        <option value="Philo">Philo</option>
+                        <option value="Sling">Sling TV</option>
+                        <option value="TheCW">The CW</option>
+                        <option value="Tubi">Tubi</option>
+                        <option value="Viki">Viki</option>
+                        <option value="VRV">VRV</option>
+                        <option value="YouTubeTV">YouTubeTV</option>
+                        <option value="Other">Other (Please Comment Below)</option>
+                    </select>
+            </div>
+            <div id="checkbox-area">
+                <p id="preferences-title"><b>What do you look for in a streaming service? (Check all that apply)</b></p>
+                <div id="preferences">
+                    <input type="checkbox" id="content" name="preferences" value="content">
+                        <label for="content"><b>Content</b></label><br>
+                    <input type="checkbox" id="price" name="preferences" value="price">
+                        <label for="price"><b>Price</b></label><br>
+                    <input type="checkbox" id="easeOfUse" name="preferences" value="easeOfUse">
+                        <label for="easeOfUse"><b>Ease of Use</b></label><br>
+                    <input type="checkbox" id="videoQuality" name="preferences" value="videoQuality">
+                        <label for="videoQuality"><b>Video Quality</b></label>
+                </div>
+            </div>
+            <div>
+                <p id="textarea-title"><b>Additional comments:</b></p>
+                <textarea id="textarea"></textarea>
+            </div>
+            <button type="submit" id="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
