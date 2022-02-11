@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,700&display=swap');
+
 $text-color: #3A606E;
 $background-color: #E0E0E0;
 
@@ -7,25 +9,19 @@ $background-color: #E0E0E0;
     box-sizing: border-box;
 }
 
-h1 {
-    font-family: 20px Helvetica, sans-serif;
-}
-
-p {
-    font-family: monospace;
-}
-
 body {
     background-image: linear-gradient(180deg, $background-color, #CCCCCC);
     font-size: 1.2em;
     text-align: center;
     color: $text-color;
+    font-family: 'Roboto', sans-serif;
 }
 
 #title {
     background-image: linear-gradient(180deg, $text-color, #467586);
     padding: 10px;
     color: $background-color;
+    font-size: 2em;
 }
 
 #description {
@@ -41,6 +37,10 @@ hr.rounded {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.input-section > label {
+    font-weight: bold;
 }
 
 #name {
@@ -63,26 +63,56 @@ hr.rounded {
     padding: 5px 0px 10px 0px;
 }
 
-#favoriteService {
-   font-size: 20px;
-   font-family: monospace;
-   padding: 1rem 0rem;
+.radio-choice {
+    margin: 1em;
 }
 
-#favoriteService:hover {
-    background-color: #d7dbd7;
+.radio-choice > label {
+    font-weight: bold;
+}
+
+#favorite-service {
+   font-size: 20px;
+   font-family: monospace;
+   height: 10em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#dropdown {
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+    margin: 1em;
+}
+
+#checkbox-area {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #preferences-title {
-    font-family: monospace;
     font-size: 16px;
+    margin: 1em;
 }
 
 #preferences {
-    padding-bottom: 14px;
-    margin-left: 40%;
+    margin-left: auto;
     margin-right: auto;
     text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 0.8em;
+    grid-column-gap: 2em;
+}
+
+#textarea-section {
+    height: 10em;
 }
   
 #textarea-title {
@@ -110,6 +140,7 @@ hr.rounded {
     margin-left: auto;
     margin-right: 20px;
     margin-top: 10px;
+    margin-bottom: 1em;
 }
 
 #submit:hover {
