@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -14,10 +16,12 @@ p {
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#E0E0E0), to(#CCCCCC));
   background-image: linear-gradient(180deg, #E0E0E0, #CCCCCC);
+  font-size: 1.2em;
+  text-align: center;
+  color: #3A606E;
 }
 
 #title {
-  text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3A606E), to(#467586));
   background-image: linear-gradient(180deg, #3A606E, #467586);
   padding: 10px;
@@ -25,60 +29,54 @@ body {
 }
 
 #description {
-  text-align: center;
   margin: 1rem;
 }
 
-#generalInfo {
-  text-align: center;
-  padding-top: 20px;
-  border-top: dotted;
-  border-color: #3A606E;
+hr.rounded {
+  margin: 2em 0em;
+}
+
+#first-section {
+  height: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #name {
   width: 300px;
   max-width: 90%;
-  margin-bottom: 7px;
-}
-
-#name-label {
-  color: #3A606E;
 }
 
 #email {
   width: 300px;
   max-width: 90%;
-  margin-bottom: 7px;
-}
-
-#email-label {
-  color: #3A606E;
 }
 
 #number {
   margin-bottom: 7px;
 }
 
-#number-label {
-  color: #3A606E;
-}
-
 #radio {
-  text-align: center;
-  color: #3A606E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 5px 0px 10px 0px;
 }
 
 #favoriteService {
-  text-align: center;
-  color: #3A606E;
   font-size: 20px;
   font-family: monospace;
-  border-top: dotted;
-  border-bottom: dotted;
   padding: 1rem 0rem;
-  border-color: #828E82;
 }
 
 #favoriteService:hover {
@@ -86,25 +84,20 @@ body {
 }
 
 #preferences-title {
-  text-align: center;
-  color: #3A606E;
   font-family: monospace;
   font-size: 16px;
 }
 
 #preferences {
   padding-bottom: 14px;
-  color: #3A606E;
   margin-left: 40%;
   margin-right: auto;
+  text-align: left;
 }
 
 #textarea-title {
-  text-align: center;
   color: #2C4954;
   font-size: 14px;
-  border-top: dotted;
-  border-color: #828E82;
   padding-top: 14px;
 }
 
