@@ -165,3 +165,33 @@ input[type=number] {
 #submit:hover {
     background-color: #3A606E;
 }
+
+@media screen and (min-width: 551px) {
+    body {
+        background-image: linear-gradient(180deg, $text-color, #467586);
+    }
+
+    #main {
+        width: 550px;
+        background-image: linear-gradient(180deg, $background-color, #CCCCCC);
+        display: block;
+        margin: 1em auto;
+        border-radius: 10px;
+    }
+
+    #title {
+        background-image: linear-gradient(90deg, #89adb9, $background-color, #89adb9);
+        color: $text-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #description {
+        font-size: 0.8em;
+        transform: translateY(1em);
+    }
+
+    #submit {
+        transform: translateY(-1em);
+    }
+}

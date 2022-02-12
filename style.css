@@ -192,4 +192,35 @@ input[type=number] {
 #submit:hover {
   background-color: #3A606E;
 }
+
+@media screen and (min-width: 551px) {
+  body {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3A606E), to(#467586));
+    background-image: linear-gradient(180deg, #3A606E, #467586);
+  }
+  #main {
+    width: 550px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E0E0E0), to(#CCCCCC));
+    background-image: linear-gradient(180deg, #E0E0E0, #CCCCCC);
+    display: block;
+    margin: 1em auto;
+    border-radius: 10px;
+  }
+  #title {
+    background-image: -webkit-gradient(linear, left top, right top, from(#89adb9), color-stop(#E0E0E0), to(#89adb9));
+    background-image: linear-gradient(90deg, #89adb9, #E0E0E0, #89adb9);
+    color: #3A606E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #description {
+    font-size: 0.8em;
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+  }
+  #submit {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+  }
+}
 /*# sourceMappingURL=style.css.map */
