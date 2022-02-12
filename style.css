@@ -15,6 +15,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+input,
+select {
+  padding: 0.3em;
+}
+
 #title {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3A606E), to(#467586));
   background-image: linear-gradient(180deg, #3A606E, #467586);
@@ -25,10 +30,11 @@ body {
 
 #description {
   margin: 1rem;
+  font-size: 1em;
 }
 
 hr.rounded {
-  margin: 2em 0em;
+  margin: 2em 1em;
 }
 
 #first-section {
@@ -48,11 +54,7 @@ hr.rounded {
   font-weight: bold;
 }
 
-#name {
-  width: 300px;
-  max-width: 90%;
-}
-
+#name,
 #email {
   width: 300px;
   max-width: 90%;
@@ -60,6 +62,17 @@ hr.rounded {
 
 #number {
   margin-bottom: 7px;
+  width: 2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #radio {
@@ -78,11 +91,12 @@ hr.rounded {
 
 .radio-choice > label {
   font-weight: bold;
+  font-size: 1em;
 }
 
 #favorite-service {
-  font-size: 20px;
-  font-family: monospace;
+  font-size: 1.4em;
+  font-weight: bold;
   height: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,9 +134,14 @@ hr.rounded {
           justify-content: center;
 }
 
+.checkbox-choice {
+  font-size: 1em;
+}
+
 #preferences-title {
-  font-size: 16px;
+  font-size: 1.4em;
   margin: 1em;
+  font-weight: bold;
 }
 
 #preferences {
@@ -144,8 +163,6 @@ hr.rounded {
 }
 
 #textarea-title {
-  color: #2C4954;
-  font-size: 14px;
   padding-top: 14px;
 }
 
@@ -153,9 +170,10 @@ hr.rounded {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 90%;
-  padding-top: 4px;
-  padding-bottom: 7px;
+  width: 500px;
+  max-width: 90%;
+  height: 8em;
+  padding: 0.3em;
 }
 
 #submit {
