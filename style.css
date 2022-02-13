@@ -18,6 +18,20 @@ body {
 input,
 select {
   padding: 0.3em;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+}
+
+input:hover, input:active, input:focus,
+select:hover,
+select:active,
+select:focus {
+  background-color: #fff;
+}
+
+input:focus,
+select:focus {
+  outline-color: #3A606E;
 }
 
 #title {
@@ -89,9 +103,19 @@ input[type=number] {
   margin: 1em;
 }
 
-.radio-choice > label {
-  font-weight: bold;
+.radio-choice label {
   font-size: 1em;
+}
+
+.radio-choice input {
+  cursor: pointer;
+  accent-color: #3A606E;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.radio-choice input:checked + label {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #favorite-service {
@@ -111,6 +135,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #dropdown {
@@ -118,6 +143,7 @@ input[type=number] {
   max-width: 90%;
   text-align: center;
   margin: 1em;
+  border-radius: 5px;
 }
 
 #checkbox-area {
@@ -136,6 +162,15 @@ input[type=number] {
 
 .checkbox-choice {
   font-size: 1em;
+}
+
+.checkbox-choice input {
+  cursor: pointer;
+  accent-color: #3A606E;
+}
+
+.checkbox-choice input:checked + label {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #preferences-title {
@@ -174,6 +209,16 @@ input[type=number] {
   max-width: 90%;
   height: 8em;
   padding: 0.3em;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+}
+
+#textarea:hover, #textarea:active, #textarea:focus {
+  background-color: #fff;
+}
+
+#textarea:focus {
+  outline-color: #3A606E;
 }
 
 #submit {
@@ -187,10 +232,14 @@ input[type=number] {
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 1em;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  border-radius: 5px;
 }
 
-#submit:hover {
+#submit:hover, #submit:focus {
   background-color: #3A606E;
+  color: #fff;
 }
 
 @media screen and (min-width: 551px) {

@@ -20,6 +20,18 @@ body {
 input,
 select {
     padding: 0.3em;
+    background-color: $background-color;
+    border-radius: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #fff;
+    }
+
+    &:focus {
+        outline-color: $text-color;
+    }
 }
 
 #title {
@@ -79,11 +91,21 @@ input[type=number] {
 
 .radio-choice {
     margin: 1em;
-}
 
-.radio-choice > label {
-    font-weight: bold;
-    font-size: 1em;
+    label {
+        font-size: 1em;
+    }
+
+    input {
+        cursor: pointer;
+        accent-color: $text-color;
+        width: 1.2em;
+        height: 1.2em;
+
+        &:checked + label {
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+    }
 }
 
 #favorite-service {
@@ -94,6 +116,7 @@ input[type=number] {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #dropdown {
@@ -101,6 +124,7 @@ input[type=number] {
     max-width: 90%;
     text-align: center;
     margin: 1em;
+    border-radius: 5px;
 }
 
 #checkbox-area {
@@ -112,6 +136,15 @@ input[type=number] {
 
 .checkbox-choice {
     font-size: 1em;
+
+    input {
+        cursor: pointer;
+        accent-color: $text-color;
+
+        &:checked + label {
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+    }
 }
 
 #preferences-title {
@@ -147,6 +180,18 @@ input[type=number] {
     max-width: 90%;
     height: 8em;
     padding: 0.3em;
+    background-color: $background-color;
+    border-radius: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #fff;
+    }
+
+    &:focus {
+        outline-color: $text-color;
+    }
 }
   
 #submit {
@@ -160,10 +205,14 @@ input[type=number] {
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 1em;
-}
+    transition: 250ms;
+    border-radius: 5px;
 
-#submit:hover {
-    background-color: #3A606E;
+    &:hover,
+    &:focus {
+        background-color: #3A606E;
+        color: #fff;
+    }
 }
 
 @media screen and (min-width: 551px) {
