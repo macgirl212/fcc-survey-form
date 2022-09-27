@@ -1,4 +1,4 @@
-# fcc-survey-form
+# Survey Form
 
 This is a survey form made as part of the freeCodeCamp curriculum.
 
